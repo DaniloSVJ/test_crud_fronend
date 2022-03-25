@@ -169,7 +169,7 @@ function App() {
       mes = (data.getMonth() + 1).toString().padStart(2, '0'),
       ano = data.getFullYear();
       console.log(`o mês é: ${mes}`)
-    return `${dia}/${mes}/${ano}`;
+    return data //`${dia}/${mes}/${ano}`;
   }
   return (
     <div className="App">
