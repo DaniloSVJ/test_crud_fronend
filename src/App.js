@@ -163,10 +163,12 @@ function App() {
 
   })
   function dataAtualFormatada(dataH) {
-    let data = new Date(dataH),
+    let dataN = dataH.substring(0,10)
+    let data = new Date(dataN),
       dia = data.getDate().toString().padStart(2, '0'),
       mes = (data.getMonth() + 1).toString().padStart(2, '0'),
       ano = data.getFullYear();
+      console.log()
     return `${dia}/${mes}/${ano}`;
   }
   return (
